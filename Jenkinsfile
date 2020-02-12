@@ -43,7 +43,10 @@ node() {
     }
 
 }
-branchSpecificConfig(){
+/**
+    PIPELINE END
+**/
+def branchSpecificConfig(){
     env.gridURL = 'http://10.2.0.72:4444/wd/hub'
     if(env.GRID_URL){
         env.gridURL = env.GRID_URL
