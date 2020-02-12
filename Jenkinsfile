@@ -55,3 +55,4 @@ def branchSpecificConfig(){
             env.BRANCH_NAME = "master"
         }
 }
+return this
