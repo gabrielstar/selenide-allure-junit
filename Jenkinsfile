@@ -48,4 +48,7 @@ branchSpecificConfig(){
     if(env.GRID_URL){
         env.gridURL = env.GRID_URL
     }
+    if(!env.BRANCH_NAME){
+            env.BRANCH_NAME = "master"
+        }
 }
