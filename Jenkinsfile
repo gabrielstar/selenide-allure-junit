@@ -4,7 +4,7 @@ node() {
      properties([
             parameters([
                 string(defaultValue:"${env.BRANCH_NAME}",description:'Execute test job against given branch',name:'BRANCH'),
-                string(defaultValue:'${env.gridURL}',description:'URL of Selenium Grid to Use',name:'GRID_URL'),
+                string(defaultValue:"${env.gridURL}",description:'URL of Selenium Grid to Use',name:'GRID_URL'),
             ])
         ])
     def repoURL = 'https://github.com/gabrielstar/selenide-allure-junit.git'
