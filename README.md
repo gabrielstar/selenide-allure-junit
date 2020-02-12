@@ -17,10 +17,14 @@
 * using per environment properties `mvnw clean test -Denv=test`
 * run parallel on grid `mvnw clean test -Dthreads=3 -Dtest=RegressionTestsSuite,SmokeTestsSuite -Dselenide.remote=http://localhost:4444/wd/hub`
 
+More run examples can be found in project root directory.
+
 ## For Jenkins example.
 
 1. Click New Item -> Pipeline
 2. In Pipeline choose Pipeline script from SCM
 3. Choose SCM:git, Repository URL: https://github.com/gabrielstar/selenide-allure1-junit4-parallelJVM-JenkinsPipelines-Grid.git, branch: */master
-4. Save && Build Now
+4. Save & Build Now
+
+If it fails please specify valid grid URL in second run.
 
