@@ -2,12 +2,12 @@ package org.selenide.examples.tests.suites;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import org.selenide.examples.tests.myapp.OrderTest;
+import org.selenide.examples.tests.StopOnFailureSuite;
+import org.selenide.examples.tests.myapp.OrderTestAsSuiteDevelopment;
 
-@RunWith(Suite.class)
-
+@RunWith(StopOnFailureSuite.class)
 @Suite.SuiteClasses({
-        OrderTest.class,
+        OrderTestAsSuiteDevelopment.class,
 
 })
 
